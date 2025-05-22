@@ -20,7 +20,9 @@ You should have received a copy of the GNU Affero General Public License along w
 #include <type_traits>
 
 #include "Colors.hpp"
-#include "Palette.hpp"
+
+// Commented out to avoid multiple definition errors when included from multiple sources.
+// #include "Palette.hpp"
 
 
 class String;
