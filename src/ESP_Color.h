@@ -43,6 +43,12 @@ namespace ESP_Color
 	template <typename T>
 	struct HSV
 	{
+		HSV() :
+			H(T(0)), S(T(0)), V(T(0)) {}
+
+		HSV(T h, T s, T v) :
+			H(h), S(s), V(v) {}
+
 		T H = T(0);
 		T S = T(0);
 		T V = T(0);
